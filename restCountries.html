@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-4xl font-bold text-center p-2">
+        Welcome to Rest World!
+    </h1>
+
+    <main>
+        <section id="country-container" class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+        </section>
+
+        <div class="text-center m-5">
+            <button onclick="seeAllCountry()" class="btn btn-accent">SEE ALL</button>
+        </div>
+
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box" id="modal-box">
+
+            </div>
+        </dialog>
+
+    </main>
+
+    <script src="./restCountries.js"></script>
+</body>
+
+</html>
